@@ -654,15 +654,18 @@ body {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .testimonial-track {
   display: flex;
-  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
 }
 
 .testimonial-card {
-  min-width: 100%;
+  flex: 0 0 33.333%;
+  min-width: 33.333%;
   background: #fff;
   padding: 40px;
   border-radius: 15px;
@@ -1149,6 +1152,15 @@ body {
 
   .chat-window {
     width: 300px;
+  }
+
+  .testimonial-track {
+    width: 300%;
+  }
+  
+  .testimonial-card {
+    flex: 0 0 100%;
+    min-width: 100%;
   }
 }
 
